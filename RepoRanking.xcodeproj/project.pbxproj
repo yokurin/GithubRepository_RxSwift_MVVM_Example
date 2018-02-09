@@ -145,8 +145,9 @@
 			isa = PBXGroup;
 			children = (
 				AE2510392005F55A001FA087 /* RepositoryListViewController.swift */,
+				AE25103B2005F8A5001FA087 /* RepositoryListViewController.storyboard */,
 				AE4761512017202800D78ED2 /* LanguageListViewController.swift */,
-				AE4761532017203600D78ED2 /* LanguageListViewModel.swift */,
+				AE4761552017208500D78ED2 /* LanguageListViewController.storyboard */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -156,6 +157,7 @@
 			children = (
 				AEF3EAD51FFF3BBD00A5C74A /* RepositoryViewModel.swift */,
 				AEF3EAD71FFF3C4900A5C74A /* RepositoryListViewModel.swift */,
+				AE4761532017203600D78ED2 /* LanguageListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -192,9 +194,7 @@
 			children = (
 				AE25103D2006014B001FA087 /* RepositoryTableViewCell.swift */,
 				AE25103E2006014B001FA087 /* RepositoryTableViewCell.xib */,
-				AE25103B2005F8A5001FA087 /* RepositoryListViewController.storyboard */,
 				AEF3EAB71FFE1D6300A5C74A /* LaunchScreen.storyboard */,
-				AE4761552017208500D78ED2 /* LanguageListViewController.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
