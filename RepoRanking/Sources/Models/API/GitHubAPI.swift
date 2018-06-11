@@ -29,11 +29,6 @@ final class GitHubAPI {
 }
 
 final class GithubService {
-    //    private let session: URLSession
-    //
-    //    init(session: URLSession = URLSession.shared) {
-    //        self.session = session
-    //    }
 
     /// - Returns: a list of languages from GitHub.
     static func getLanguageList() -> Observable<[String]> {
@@ -57,15 +52,5 @@ final class GithubService {
             .map({ (response) -> [Repository] in
                 response.items
             })
-
-        //        Session.send(GitHubAPI.RepositoriesRanking(language: language)) { result in
-        //            switch result {
-        //            case .success(let response):
-        //                let a = Observable.just(response.items)
-        //                print(response)
-        //            case .failure(let error):
-        //                print(error)
-        //            }
-        //        }
     }
 }

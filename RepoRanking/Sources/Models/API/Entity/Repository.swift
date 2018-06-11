@@ -8,14 +8,6 @@
 
 import Foundation
 
-//struct Repository: Codable {
-//    let id: Int
-//    let full_name: String
-//    let description: String
-//    let stargazers_count: Int
-//    let url: String
-//}
-
 struct Repository: Decodable {
     let id: Int
     let fullName: String

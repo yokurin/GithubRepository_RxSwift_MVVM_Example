@@ -11,8 +11,8 @@ import RxSwift
 import RxCocoa
 import SafariServices
 
-final class RepositoryListViewController: UIViewController {
 
+final class RepositoryListViewController: UIViewController {
 
     @IBOutlet private weak var tableView: UITableView! {
         didSet {
@@ -27,7 +27,11 @@ final class RepositoryListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
         setupBindings()
+    }
+
+    private func setupUI() {
         navigationItem.rightBarButtonItem = chooseLanguageButton
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 120
@@ -111,7 +115,6 @@ final class RepositoryListViewController: UIViewController {
         languageListViewController.viewModel = languageListViewModel
         let nvc = UINavigationController(rootViewController: languageListViewController)
         self.present(nvc, animated: true)
-
     }
 
 }

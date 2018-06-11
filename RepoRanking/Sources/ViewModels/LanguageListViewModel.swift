@@ -12,7 +12,6 @@ import RxCocoa
 final class LanguageListViewModel {
 
     // MARK: - Inputs
-
     let selectLanguage: AnyObserver<String>
     let cancel: AnyObserver<Void>
 

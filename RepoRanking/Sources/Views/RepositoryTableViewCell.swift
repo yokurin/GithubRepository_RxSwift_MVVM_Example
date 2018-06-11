@@ -10,14 +10,9 @@ import UIKit
 
 final class RepositoryTableViewCell: UITableViewCell {
 
-
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var descriptionLabel: UILabel!
     @IBOutlet private weak var startCountLabel: UILabel!
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
 
     func configure(repogitory: RepositoryViewModel) {
         nameLabel.text = repogitory.name

@@ -12,6 +12,7 @@ import RxSwift
 final class RepositoryListViewModel {
 
     // MARK: - Inputs
+    // 外から代入されるもの
 
     /// Call to update current language. Causes reload of the repositories.
     /// 言語選択から戻る時に発火
@@ -31,7 +32,7 @@ final class RepositoryListViewModel {
 
 
     // MARK: - Outputs
-    // 外からアクセスされるもの
+    // 外から参照されるもの
     
     /// Emits an array of fetched repositories.
     /// フェッチしてきたレポジトリのリスト
